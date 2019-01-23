@@ -1,2 +1,2 @@
 # Calculadora-de-compras
-Calculadora de Compras básica
+Projeto de uma calculadora de custo-beneficio e comparação de preço de dois itens distintos.
