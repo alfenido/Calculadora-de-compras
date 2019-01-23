@@ -1,0 +1,99 @@
+html, body, * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans', sans-serif;
+}
+:root {
+    --main-bg-color: #2c3338;
+    --main-button-color: #67BC4F;
+    --main-text-color: #FFFFFF;
+    --main-neutral-color: #B5B5B5;
+} 
+body {
+    background-color: var(--main-bg-color);
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+body h1 {
+    color: var(--main-text-color);
+    margin-bottom: 15px;
+}
+.app {
+    display: flex;
+    width: 600px;
+    height: 300px;
+    border: 1px solid var(--main-neutral-color);
+    border-radius: 5px;
+    padding: 10px;
+}
+.appTable {
+    width: 100%;
+}
+table.appTable tr {
+    line-height: 45px;
+}
+table.appTable th {
+    color:var(--main-text-color);
+}
+table.appTable th {
+    color:var(--main-text-color);
+    padding: 5px 0;
+
+}
+table.appTable td {
+    padding: 5px;
+    text-align:center;
+    color:var(--main-text-color);
+}
+.inputApp {
+    text-align:center;
+    line-height:35px;
+    width: 100px;
+    font-size: 14pt;
+    background-color:var(--main-bg-color);
+    border:1px solid;
+    
+    border-color: var(--main-neutral-color);
+    border-radius: 5px;
+    color: var(--main-text-color);
+}
+.inputAppResult {
+    background-color: var(--main-neutral-color);
+    border-color: var(--main-bg-color);
+    color:var(--main-bg-color);
+}
+.inputAppResults, .inputAppItemA, .inputAppItemB {
+    opacity: 0;
+}
+.resultadoGeral {
+    margin-top: 20px;
+}
+#appResult {
+
+    margin: 10px;
+    font-size: 16pt;
+    color: white;
+    background-color: var(--main-button-color)
+}
+.AppVencedor {
+    border: 1px solid green;
+    padding: 2px 4px;
+    margin: 0 2px;
+    background-color:white;
+    color:green; 
+    border-radius: 5px;
+}
+.AppPerdedor {
+    border: 1px solid red;
+    padding: 2px 4px;
+    margin: 0 2px;
+    background-color:white;
+    color:red; 
+    border-radius: 5px;
+}
+.resultadoGeral {
+    opacity: 0;
+}

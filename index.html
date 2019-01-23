@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Configurações de compatibilidade -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Encode+Sans" rel="stylesheet">
+    <!-- Titulo da página -->
+    <title>Etanol X Gasolina</title>
+    <!-- Inclusão do arquivo de estilização -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Inclusão do jQuery, a versão pode ser alterada a gosto. -->
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <!-- Mask -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-maskmoney/3.0.2/jquery.maskMoney.min.js"></script>
+    <!-- Inclusão do JS responsável pelo calculo -->
+    <script src="script.js"></script>
+
+</head>
+<body>
+        <h1> Calculadora de Compras </h1>
+    <div class="app">
+        
+        <table class="appTable">
+            <tr>
+                <th></th>
+                <th>Item A</th>
+                <th>Item B</th>
+            </tr>
+            <tr>
+                <td>Preço</td>
+                <td><input type="text" class="inputApp" name="valor_itemA" placeholder="R$"></td>
+                <td><input type="text" class="inputApp" name="valor_itemB" placeholder="R$"></td>
+            </tr>
+            <tr>
+                <td>Quantidade</td>
+                <td><input type="number" class="inputApp" name="quantidade_itemA" placeholder="Qtd."> </td>
+                <td><input type="number" class="inputApp" name="quantidade_itemB" placeholder="Qtd."></td>
+            </tr>
+            <tr class="inputAppResults">
+                <td>Preço por unidade</td>
+                <td><input type="text" disabled class="inputApp inputAppItemA" name="itemA_PPU"></td>
+                <td><input type="text" disabled class="inputApp inputAppItemB" name="itemB_PPU"></td>
+            </tr>
+            <tr class="resultadoGeral">
+                <td colspan=3 id="appResult">aaab </td>
+            </tr>
+        </table>
+    </div>
+    
+</body>
+</html>
